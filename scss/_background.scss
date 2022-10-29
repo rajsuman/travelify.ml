@@ -1,0 +1,32 @@
+// Backgrounds styles
+.bg {
+  &-primary {
+    @include set-background($primary-color);
+  }
+  &-dark {
+    @include set-background($dark-color);
+  }
+  &-light {
+    @include set-background($light-color);
+    border: #cccccc 1px solid;
+  }
+  &-danger {
+    @include set-background($danger-color);
+  }
+  &-success {
+    @include set-background($success-color);
+  }
+  &-white {
+    @include set-background(#ffffff);
+    border: #cccccc 1px solid;
+  }
+}
+
+.dark-overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
